@@ -1,3 +1,117 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+button:hover{
+    cursor: pointer;
+}
+
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.popup-bg-cover{
+    position: fixed; /* ブラウザの定位置に固定 */
+    background: rgba(0, 0, 0, .5); /* 背景色を半透明の黒色に */
+    width: 100%; /* 要素の横幅を画面全体に */
+    height: 100%; /* 要素の高さを画面全体に */
+    top: 0; /* 要素の固定位置をブラウザ最上部に合わせる */
+    left: 0; /* 要素の固定位置をブラウザ左側に合わせる */
+    z-index: 50; /* 要素をコンテンツより前面に（要調整） */
+}
+
+@media screen {
+
+}
+.side_menu_off{
+    background:white;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    transition-duration: 0.6s;
+    z-index: 100;
+}@media screen and (min-width:600px){
+    .side_menu_off {
+        background: white;
+        width: 350px;
+        height: 100%;
+        position: fixed;
+        left: -350px;
+        top: 0;
+        transition-duration: 0.6s;
+        z-index: 100;
+    }
+}
+
+.side_menu_show{
+    background:white;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition-duration: 0.6s;
+    z-index: 100;
+}@media screen and (min-width:600px){
+    .side_menu_show {
+        background: white;
+        width: 350px;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transition-duration: 0.6s;
+        z-index: 100;
+    }
+}
+
+.scroll_none{
+    overflow: hidden;
+}
+
+/*===================[検索inputデザイン]========================================*/
+.search-form-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid #2589d0;
+    border-radius: 3px;
+}
+
+.search-form-1 input {
+    width: 250px;
+    height: 45px;
+    padding: 5px 15px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1em;
+    outline: none;
+}
+
+.search-form-1 input::placeholder{
+    color: #777777;
+}
+
+.search-form-1 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 45px;
+    border: none;
+    background-color: #2589d0;
+    cursor: pointer;
+}
+
+.search-form-1 button::after {
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z' fill='%23fff'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    content: '';
+}
