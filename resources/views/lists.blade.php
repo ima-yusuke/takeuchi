@@ -7,20 +7,22 @@
             <thead>
             <tr>
                 <th>/</th>
-                <th>氏名</th>
                 <th>住所</th>
+                <th>備考1</th>
+                <th>氏名</th>
                 <th>金額</th>
-                <th>備考</th>
+                <th>備考2</th>
             </tr>
             </thead>
             <tbody>
             @foreach($data as $value)
                 <tr>
                     <td>{{$value["id"]}}</td>
-                    <td>{{$value["name"]}}</td>
                     <td>{{$value["address"]}}</td>
-                    <td>{{$value["price"]}}</td>
-                    <td>{{$value["note"]}}</td>
+                    <td>{{$value["note1"]}}</td>
+                    <td>{{$value["name"]}}</td>
+                    <td>{{$value["money"]}}</td>
+                    <td>{{$value["note2"]}}</td>
                 </tr>
             @endforeach
             </tbody>

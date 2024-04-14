@@ -16,8 +16,8 @@
             <ul>
                 <li>氏名:{{$selectedData['name']}}</li>
                 <li>住所：{{$selectedData['address']}}</li>
-                <li>金額：{{$selectedData['price']}}</li>
-                <li>備考：{{$selectedData['note']}}</li>
+                <li>金額：{{$selectedData['money']}}</li>
+                <li>備考：{{$selectedData['note1']}}</li>
 
             </ul>
         @endif
