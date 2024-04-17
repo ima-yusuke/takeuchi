@@ -32,9 +32,13 @@ class Register extends Controller
 
     public $data =[
     ["id"=>1,"name"=>"今井祐輔","address"=>"a","note1"=>"テスト","note2"=>"こんにちは","money"=>"3000円"],
-    ["id"=>2,"name"=>"竹内千速","address"=>"b","note1"=>"テスト","note2"=>"こんにちは","money"=>"8000円"],
+    ["id"=>2,"name"=>"竹内千速","address"=>"b","note1"=>"こんばんは！","note2"=>"あはよう！","money"=>"8000円"],
     ["id"=>3,"name"=>"山田太郎","address"=>"c","note1"=>"テスト","note2"=>"こんにちは","money"=>"4000円"],
     ["id"=>4,"name"=>"中村俊輔","address"=>"d","note1"=>"テスト","note2"=>"こんにちは","money"=>"5000円"],
+    ["id"=>5,"name"=>"島ちはや","address"=>"e","note1"=>"this is","note2"=>"sunny","money"=>"8000円"],
+    ["id"=>6,"name"=>"ネイマール","address"=>"d","note1"=>"テスト","note2"=>"こんにちは","money"=>"5000円"],
+
+
     ];
 
     public function open_lists()
