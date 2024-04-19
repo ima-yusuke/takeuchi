@@ -4,6 +4,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Register;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/login-page', [Register::class, 'login_page'])->name('login_page');
+Route::post('/login-page', [Register::class, 'login_try'])->name('login_try');
+
 Route::get('/', [Register::class, 'open_home'])->name('open_home');
 
 //検索
