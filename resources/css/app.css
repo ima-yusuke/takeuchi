@@ -12,6 +12,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 .popup-bg-cover{
     position: fixed; /* ブラウザの定位置に固定 */
     background: rgba(0, 0, 0, .5); /* 背景色を半透明の黒色に */
@@ -395,4 +396,42 @@ html{
 @keyframes rotate{
     0%  { transform : rotate(0) ;}
     100%{ transform : rotate(360deg) ;}
+}
+
+/*---------------------------------------------------------------------------*/
+.card{
+    width: 288px;
+    height: auto;
+}
+.card__imgframe{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.card__textbox{
+    width: 100%;
+    height: auto;
+    padding: 20px 18px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+.card__textbox > * + *{
+    margin-top: 10px;
+}
+.card__titletext{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 125%;
+}
+.card__overviewtext{
+    font-size: 12px;
+    line-height: 150%;
+}
+
+.card-skin{
+    overflow: hidden;
+    border-radius: 8px;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    border-bottom: solid 5px #888;
 }
