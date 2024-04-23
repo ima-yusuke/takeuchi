@@ -13,9 +13,9 @@ Route::get('/', [Register::class, 'open_home'])->name('open_home');
 Route::post('/', [Register::class, 'search_data'])->name('search_data');
 
 
-//登録
-Route::get('/open-register', [Register::class, 'open_register'])->name('open_register');
-Route::post('/add-person', [Register::class, 'add_person'])->name('add_person');
+//住所検索
+Route::get('/open-address', [Register::class, 'open_address'])->name('open_address');
+Route::post('/open-address', [Register::class, 'search_address'])->name('search_address');
 
 //一覧表示
 Route::get('/open_lists', [Register::class, 'open_lists'])->name('open_lists');

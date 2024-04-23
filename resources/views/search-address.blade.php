@@ -1,14 +1,16 @@
 <x-layout title="お名前検索">
     {{--メインパート--}}
-    <x-header></x-header>
 
+    <x-header></x-header>
     <div class="flex flex-col justify-center items-center gap-6 min-h-full h-auto">
-        <form action="{{route('search_data')}}" method="post" class="search-form-1" id="search-form">
+        <form action="{{route('search_address')}}" method="post" class="search-form-1" id="search-form">
             @csrf
-            <label>
-                <input type="text" class="text-2xl" placeholder="お名前" name="name" id="search-input">
-            </label>
-            <button type="submit" aria-label="検索"></button>
+            <select name="address" id="address-select" class="text-2xl">
+                <option>住所を選択してください</option>
+                @foreach($addressOptions as $value)
+                    <option value="{{$value}}">{{$value}}</option>
+                @endforeach
+            </select>
         </form>
 
         @if(isset($selectedData))
@@ -40,30 +42,18 @@
         @endif
     </div>
 
-
-
     <div class="screen_cover"></div>
-{{--    <script>--}}
-{{--        document.addEventListener('DOMContentLoaded', function() {--}}
-{{--            const searchInput = document.getElementById('search-input');--}}
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const addressSelect = document.getElementById('address-select');
 
-{{--            searchInput.addEventListener('keypress', function(event) {--}}
-{{--                // Enterキーが押されたかを確認--}}
-{{--                if (event.key === 'Enter') {--}}
-{{--                    // フォームのデフォルトの送信を阻止する--}}
-{{--                    event.preventDefault();--}}
-
-{{--                    // ここに呼び出したい関数を記述する--}}
-{{--                    searchFunction();--}}
-{{--                }--}}
-{{--            });--}}
-
-{{--            function searchFunction() {--}}
-{{--                // ここに検索を実行するコードを記述する--}}
-{{--                document.getElementById('search-form').submit();--}}
-{{--            }--}}
-{{--        });--}}
-{{--    </script>--}}
+                // セレクトボックスが変更されたときのイベントリスナーを追加
+                addressSelect.addEventListener('change', function() {
+                    // フォームを送信
+                    document.getElementById('search-form').submit();
+                });
+            });
+        </script>
 </x-layout>
 
 

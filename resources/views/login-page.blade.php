@@ -12,8 +12,8 @@
 {{--                <div class="touch touch__8"></div>--}}
 {{--                <div class="touch touch__9"></div>--}}
                 <div class="main">
-                    <div class="icon">
-                        <img class="img" src="https://pbs.twimg.com/profile_images/1568001848795353088/6IicRRIF_400x400.jpg" alt="">
+                    <div class="icon flex justify-center items-center">
+                        <img src="{{asset("/flag.svg")}}" alt="">
                     </div>
 
                     <span class="name text-xl">パスワード</span>
@@ -41,5 +41,4 @@
         </div>
     </div>
 </x-layout>
-
 
