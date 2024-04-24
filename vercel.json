@@ -30,8 +30,12 @@
             "dest": "/api/index.php"
         },
         {
-            "src": "/flag.svg",
-            "dest": "/public/flag.svg"
+            "src": "/flag.JPG",
+            "dest": "/public/flag.JPG"
+        },
+        {
+            "src": "/shima.JPG",
+            "dest": "storage/public/shima.JPG"
         }
     ],
     "env": {
@@ -47,5 +51,8 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "VIEW_COMPILED_PATH": "/tmp"
-    }
+    },
+    "rewrites": [
+        {"source": "/(.*)", "destination": "/"}
+    ]
 }
