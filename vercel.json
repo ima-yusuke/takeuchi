@@ -28,6 +28,10 @@
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
+        },
+        {
+            "src": "/flag.svg",
+            "dest": "/public/flag.svg"
         }
     ],
     "env": {

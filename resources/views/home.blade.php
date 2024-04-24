@@ -1,15 +1,16 @@
 <x-layout title="お名前検索">
-    {{--メインパート--}}
     <x-header></x-header>
 
+    {{--メインパート--}}
     <div class="flex flex-col justify-center items-center gap-6 min-h-full h-auto">
-        <form action="{{route('search_data')}}" method="post" class="search-form-1" id="search-form">
-            @csrf
-            <label>
-                <input type="text" class="text-2xl" placeholder="お名前" name="name" id="search-input">
-            </label>
-            <button type="submit" aria-label="検索"></button>
-        </form>
+            <form action="{{route('search_data')}}" method="post" class="mb-8 search-form-1" id="search-form">
+                @csrf
+                <label>
+                    <input type="text" class="text-2xl" placeholder="お名前" name="name" id="search-input">
+                </label>
+                <button type="submit" aria-label="検索"></button>
+            </form>
+
 
         @if(isset($selectedData))
             <p class="text-4xl font-bold">{{count($selectedData)}}件</p>
