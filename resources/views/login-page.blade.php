@@ -13,11 +13,7 @@
 {{--                <div class="touch touch__9"></div>--}}
                 <div class="main">
                     <div class="icon flex justify-center items-center">
-                        <img src="{{asset("/favicon.ico")}}" alt="">
                         <img src="{{asset("/flag.svg")}}" alt="">
-{{--                        <img src="{{asset("storage/favicon.ico")}}" alt="">--}}
-{{--                        <img src="{{asset("/shima.JPG")}}" alt="">--}}
-                        <img src="{{asset("storage/flag.svg")}}" alt="">
                     </div>
 
                     <span class="name text-xl">パスワード</span>
