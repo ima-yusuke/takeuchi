@@ -13,13 +13,13 @@
 {{--                <div class="touch touch__9"></div>--}}
                 <div class="main">
                     <div class="icon flex justify-center items-center">
-                        <img src="{{asset("/luffy.webp")}}" alt="">
+                        <img src="{{asset("/luffy.webp")}}" >
                     </div>
 
-                    <span class="name text-xl">パスワード</span>
+
                     <form action="{{ route('login_try') }}" method="POST">
                         @csrf
-                        <input type="password" name="password" class="my-4 text-black" placeholder="password">
+                        <input type="password" name="password" class="my-4 text-black" placeholder="パスワード">
                         <span class="link text"><button type="submit">ログイン</button></span>
                         @if (session('error'))
                             <div class="alert alert-danger">

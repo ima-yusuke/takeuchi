@@ -158,12 +158,16 @@ html{
 .icon{
     position : relative ;
     z-index : 10 ;
-    width : 140px ;
-    height : 140px ;
+    width : 180px ;
+    height : 180px ;
     border-radius : 50% ;
     background : #fff ;
     overflow : hidden ;
     transition : all ease 1s ;
+}
+.icon img {
+    width: 280px; /* img要素をdivいっぱいに広げるための幅を100%に設定 */
+    height:180px; /* 高さを自動で調整してアスペクト比を維持 */
 }
 .img{
     width : 100% ;
