@@ -1507,7 +1507,7 @@
         "id": 189,
         "address": "大山区",
         "note1": "千穂子の",
-        "name": "山本和哉",
+        "name": "山本和成",
         "money": 3000,
         "note2": null
     },
@@ -2066,7 +2066,7 @@
     {
         "id": 259,
         "address": "矢浦区",
-        "name": "矢田登雄",
+        "name": "矢田澄雄",
         "money": 10000,
         "note2": "御供¥3,000",
         "note1": null
@@ -2338,7 +2338,7 @@
     {
         "id": 293,
         "address": "越賀",
-        "name": "宮崎真成",
+        "name": "宮崎眞成",
         "money": 30000,
         "note2": "御供¥10,000",
         "note1": null
@@ -2666,7 +2666,7 @@
     {
         "id": 334,
         "address": "片田",
-        "name": "平賀忠之",
+        "name": "平賀忠久",
         "money": 10000,
         "note2": "生花料¥5,000",
         "note3": "御供¥50,000",
@@ -2828,7 +2828,7 @@
         "id": 354,
         "address": "浜島町",
         "note1": "浜島",
-        "name": "三島ひずる",
+        "name": "三嶋ひずる",
         "money": 10000,
         "note2": null
     },
@@ -3236,9 +3236,9 @@
     },
     {
         "id": 405,
-        "address": "不明",
+        "address": "岡区",
         "name": "矢田寿男",
-        "money": "¥0",
+        "money": 5000,
         "note2": "生花 二七会",
         "note1": null
     },
@@ -3473,5 +3473,37 @@
         "name": "山本貞勇",
         "money":5000,
         "note2": null
+    },
+    {
+        "id": 435,
+        "address": "大山区",
+        "note1": null,
+        "name": "大山忠行",
+        "money":3000,
+        "note2": null
+    },
+    {
+        "id": 436,
+        "address": "大山区",
+        "note1": null,
+        "name": "山本清男",
+        "money":2000,
+        "note2": null
+    },
+    {
+        "id": 437,
+        "address": "大田区",
+        "note1": null,
+        "name": "大山修史",
+        "money":20000,
+        "note2": null
+    },
+    {
+        "id": 438,
+        "address": "愛知県",
+        "note1": "知多市",
+        "name": "谷口育子",
+        "money":5000,
+        "note2": "（山本育子）"
     }
 ]

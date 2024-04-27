@@ -12,67 +12,22 @@ html{
     scroll-behavior: smooth;
 }
 
-
-.popup-bg-cover{
-    position: fixed; /* ブラウザの定位置に固定 */
-    background: rgba(0, 0, 0, .5); /* 背景色を半透明の黒色に */
-    width: 100%; /* 要素の横幅を画面全体に */
-    height: 100%; /* 要素の高さを画面全体に */
-    top: 0; /* 要素の固定位置をブラウザ最上部に合わせる */
-    left: 0; /* 要素の固定位置をブラウザ左側に合わせる */
-    z-index: 50; /* 要素をコンテンツより前面に（要調整） */
-}
-
-@media screen {
-
-}
-.side_menu_off{
-    background:white;
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    left: -250px;
-    top: 0;
-    transition-duration: 0.6s;
-    z-index: 100;
-}@media screen and (min-width:600px){
-    .side_menu_off {
-        background: white;
-        width: 350px;
-        height: 100%;
-        position: fixed;
-        left: -350px;
-        top: 0;
-        transition-duration: 0.6s;
-        z-index: 100;
-    }
-}
-
-.side_menu_show{
-    background:white;
-    width: 250px;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    transition-duration: 0.6s;
-    z-index: 100;
-}@media screen and (min-width:600px){
-    .side_menu_show {
-        background: white;
-        width: 350px;
-        height: 100%;
-        position: fixed;
-        left: 0;
-        top: 0;
-        transition-duration: 0.6s;
-        z-index: 100;
-    }
-}
-
 .scroll_none{
     overflow: hidden;
 }
+
+.absolute_div {
+    position: fixed; /* 画面上に固定する */
+    top: 0; /* 上端に配置する */
+    left: 0; /* 左端に配置する */
+    right: 0; /* 右端に配置する */
+    bottom: 0; /* 下端に配置する */
+    z-index: 1000;
+    overflow-y: auto; /* 垂直方向のスクロールを有効にする */
+    background-color: white;
+    height: 150px;
+}
+
 
 /*===================[検索inputデザイン]========================================*/
 .search-form-1 {
@@ -84,9 +39,19 @@ html{
     border-radius: 3px;
 }
 
-.search-form-1 input {
+.search-form-1 input{
     width: 220px;
     height: 45px;
+    /*padding: 5px 15px;*/
+    border: none;
+    box-sizing: border-box;
+    font-size: 2em;
+    outline: none;
+}
+
+#address-select{
+    width: 320px;
+    height: 70px;
     /*padding: 5px 15px;*/
     border: none;
     box-sizing: border-box;
@@ -294,11 +259,6 @@ html{
     transform : translateX(20px) translateY(10px) translateZ(60px);
     box-shadow : -20px -20px 24px rgba(0,0,0,.2) ;
 }
-
-
-
-
-
 
 
 /* 本体には関係ないスタイル */

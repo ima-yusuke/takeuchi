@@ -13,7 +13,7 @@
 {{--                <div class="touch touch__9"></div>--}}
                 <div class="main">
                     <div class="icon flex justify-center items-center">
-                        <img src="{{asset("/flag.svg")}}" alt="">
+                        <img src="{{asset("/luffy.webp")}}" alt="">
                     </div>
 
                     <span class="name text-xl">パスワード</span>

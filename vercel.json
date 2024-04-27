@@ -26,6 +26,10 @@
             "dest": "/public/flag.svg"
         },
         {
+            "src": "/luffy.webp",
+            "dest": "/public/luffy.webp"
+        },
+        {
             "src": "/robots.txt",
             "dest": "/public/robots.txt"
         },

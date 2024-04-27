@@ -1,20 +1,36 @@
 <x-layout title="お名前検索">
     {{--メインパート--}}
 
-    <x-header></x-header>
     <div class="flex flex-col justify-center items-center gap-6 min-h-full h-auto">
-        <form action="{{route('search_address')}}" method="post" class="search-form-1" id="search-form">
-            @csrf
-            <select name="address" id="address-select" class="text-2xl">
-                <option>住所を選択してください</option>
-                @foreach($addressOptions as $value)
-                    <option value="{{$value}}">{{$value}}</option>
-                @endforeach
-            </select>
-        </form>
+
+        @if(isset($selectedData)===false)
+            <x-header></x-header>
+            <form action="{{route('search_address')}}" method="post" class="search-form-1" id="search-form">
+                @csrf
+                <select name="address" id="address-select" class="text-2xl">
+                    <option>住所を選択してください</option>
+                    @foreach($addressOptions as $value)
+                        <option value="{{$value}}">{{$value}}</option>
+                    @endforeach
+                </select>
+            </form>
+        @endif
 
         @if(isset($selectedData))
-            <p class="text-4xl font-bold">{{count($selectedData)}}件</p>
+            <div class="absolute_div px-4">
+                <x-header></x-header>
+                <form action="{{route('search_address')}}" method="post" class="search-form-1" id="search-form">
+                    @csrf
+                    <select name="address" id="address-select" class="text-2xl">
+                        <option>住所を選択してください</option>
+                        @foreach($addressOptions as $value)
+                            <option value="{{$value}}">{{$value}}</option>
+                        @endforeach
+                    </select>
+                </form>
+            </div>
+
+            <p class="text-4xl font-bold pt-40">{{count($selectedData)}}件</p>
             <div class="flex flex-col items-center gap-6">
                 @foreach($selectedData as $key=>$value)
                     <div class="card card-skin">
